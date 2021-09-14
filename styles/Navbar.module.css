@@ -1,0 +1,82 @@
+.nav {
+    height: 4.2rem;
+    background-color: #fa7e1e;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+    .nav ul, .navUser ul {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        list-style: none;
+    }
+
+        .nav ul li a {
+            margin-right: 50px;
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: #fff;
+        }
+
+.navUser {
+    height: 4.2rem;
+    background-color: #fa7e1e;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+    .navUser ul li a {
+        margin-right: 2rem;
+        font-size: 1.15rem;
+        font-weight: 600;
+        color: #fff;
+    }
+
+
+.button {
+    float: left;
+    margin: 0rem 1rem 0rem 0rem;
+    width: 6rem;
+    height: 2.1rem;
+    background-color: #54433A;
+    border-radius: 35px;
+    border: 2px solid #54433A;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.buttonlogin {
+    float: left;
+    margin: 1rem;
+    width: 6rem;
+    height: 2.1rem;
+    background-color: #54433A;
+    border-radius: 35px;
+    border: 2px solid #54433A;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+    .button:hover, .buttonlogin:hover {
+        background-color: #fa6f05;
+        border: 2px solid #54433A;
+        font-size: 1.2rem;
+    }
+
+.input {
+    margin: 1rem;
+    width: 20rem;
+    height: 2rem;
+    background-color: #DFE0DF;
+    border: 1px solid #DFE0DF;
+    border-radius: 5rem;
+    padding: 1rem;
+}
+
+    .input:focus {
+    }

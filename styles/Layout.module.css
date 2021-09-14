@@ -1,0 +1,329 @@
+.container {
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(rgb(250, 126, 30),rgba(254, 241, 230,0.5)), url('../public/images/bg.jpg');
+    background-size: cover;
+}
+
+.userContainer {
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color: #f2f2f2;
+}
+
+.card {
+    margin: auto;
+    padding: 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px #595959;
+    width: 30%;
+    background-color: #ffff;
+}
+
+    .card form input {
+        display: block;
+        width: 40%;
+        margin: 2px auto 20px;
+        line-height: 1.4rem;
+        border: 1px solid #cccccc;
+        border-radius: 7px;
+        background-color: #f2f2f2;
+    }
+
+
+    .card button {
+        line-height: 2rem;
+        width: 7rem;
+        border: 1px solid #fa6f05;
+        border-radius: 28px;
+        background-color: #fb9a50;
+        cursor: pointer;
+        color: #666666;
+    }
+
+        .card button:hover {
+            background-color: #fa7e1e;
+            border: 1px solid #fa6f05;
+            color: #000;
+        }
+
+.signup {
+    display: block;
+    width: 60%;
+    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px #595959;
+    background-color: #ffff;
+}
+
+    .signup form {
+        width: 50%;
+        float: left;
+        display: block;
+        padding-left: 3rem;
+        padding-top: 2rem;
+    }
+
+        .signup form input {
+            width: 60%;
+            display: block;
+            line-height: 1.4rem;
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            background-color: #f2f2f2;
+        }
+
+    .signup .side {
+        display: block;
+        border-radius: 0px 10px 10px 0px;
+        opacity: 0.5;
+    }
+
+    .signup button {
+        line-height: 2rem;
+        width: 7rem;
+        border: 1px solid #fa6f05;
+        border-radius: 28px;
+        background-color: #fb9a50;
+        cursor: pointer;
+        color: #666666;
+    }
+
+        .signup button:hover {
+            background-color: #fa7e1e;
+            border: 1px solid #fa6f05;
+            color: #000;
+        }
+
+.content {
+    margin: 2rem 2rem;
+    width: 60%;
+    float: right;
+}
+
+.contentall {
+    width: 90%;
+    display: block;
+    margin: auto;
+}
+
+.postall {
+    border-radius: 0.5rem;
+    width: 23%;
+    display: block;
+    float: left;
+    margin: 4rem 1.6rem 2rem 0rem;
+    background-color: #404040;
+    box-shadow: 2px 2px 10px #666666;
+}
+
+.post {
+    border-radius: 0.5rem;
+    width: 40%;
+    display: block;
+    float: left;
+    margin: 1rem 3rem 2rem 0rem;
+    background-color: #404040;
+    box-shadow: 2px 2px 10px #666666;
+}
+
+.img {
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.text {
+    height: 4.5rem;
+    color: #fff;
+    border-radius: 0rem 0rem 0.3rem 0.3rem;
+    padding: 0.5rem 2rem;
+    overflow: hidden;
+    font-size: 0.9rem;
+}
+
+    .text p {
+        margin-top: 5px;
+    }
+
+    .text span {
+        margin-top: 7px;
+        margin-left: 5px;
+        color: #666666;
+    }
+
+    .text i {
+        color: #666666;
+        font-size: 14px;
+    }
+
+    .text:hover {
+        overflow: scroll;
+        cursor: pointer;
+    }
+
+    .text::-webkit-scrollbar {
+        width: 8px;
+        height: 0px;
+        background-color: #BBA79C;
+    }
+
+    .text::-webkit-scrollbar-thumb {
+        border-radius: 3px;
+        background-color: #FA7E1E;
+    }
+
+.profile {
+    width: 30%;
+    height: auto;
+    border-radius: 0.3rem;
+    display: block;
+    background-color: #333333;
+    padding: 4rem 5rem;
+    text-align: center;
+    float: left;
+    color: #fff;
+    margin: 4rem 0rem 4rem 4rem;
+    font-size: .9rem;
+    box-shadow: 2px 2px 15px #666666;
+}
+
+    .profile i {
+        color: #ff751a;
+        font-size: 14px;
+        margin-right: 0.3rem;
+    }
+
+    .profile span {
+        margin-left: 0.3rem;
+    }
+
+    .profile p {
+        color: #bfbfbf;
+    }
+
+
+.avatar {
+    border-radius: 50%;
+}
+
+.buttons {
+    display: block;
+    float: right;
+    width: 65%;
+    padding: 3rem 0rem 0rem 4rem;
+}
+
+    .buttons button {
+        width: 7rem;
+        height: 2rem;
+        border: 2px solid #333333;
+        border-radius: 10rem;
+        margin-right: 2rem;
+        background-color: #333333;
+        color: #fff;
+        cursor: pointer;
+        font-size: 14px;
+        box-shadow: 2px 2px 10px #666666;
+    }
+
+        .buttons button:hover {
+            background-color: #fa7e1e;
+            font-size: 16px;
+        }
+
+    .buttons input[type="file"] {
+        border: 5px solid #333333;
+        border-radius: 10rem;
+        background-color: #333333;
+        width: 13rem;
+        height: 2.2rem;
+        color: #fff;
+        box-shadow: 2px 2px 10px #666666;
+        margin-right: 2rem;
+    }
+
+    .buttons ::-webkit-file-upload-button {
+        background-color: #595959;
+        border: none;
+        border-radius: 12rem;
+        padding: 0.3rem 0.7rem;
+        color: #fff;
+    }
+
+        .buttons ::-webkit-file-upload-button:hover {
+            cursor: pointer;
+            background-color: #fa7e1e;
+        }
+
+
+
+@media only screen and (max-width: 1400px) {
+    .signup .side {
+        opacity: 0;
+    }
+
+    .signup form {
+        width: 100%;
+        text-align: center;
+        display: block;
+        padding: 1rem;
+    }
+
+        .signup form input {
+            width: 30%;
+            margin: auto;
+            display: block;
+            margin-bottom: 20px;
+        }
+}
+
+@media only screen and (max-width: 800px) {
+    .card {
+        width: 350px;
+        height: auto;
+        margin: auto;
+    }
+
+        .card form input {
+            width: 50%;
+        }
+
+    .signup form input {
+        width: 50%;
+        margin: auto;
+        display: block;
+        margin-bottom: 15px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .card {
+        width: 300px;
+        margin: auto;
+    }
+
+        .card form input {
+            width: 50%;
+            margin: 2px auto 10px;
+        }
+}
+
+@media only screen and (max-height:620px) {
+    .card {
+        display: none;
+    }
+
+    .signup {
+        display: none;
+    }
+}
