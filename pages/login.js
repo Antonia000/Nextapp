@@ -90,8 +90,8 @@ export default function Login() {
                     </h2>
                     <div>
                         <p>Login with </p>
-                        <a href="/"><FontAwesomeIcon icon={faGoogle} size="2x" /></a>
-                        <a href="/"><FontAwesomeIcon icon={faFacebook} size="2x" /></a>
+                        <Link href="/"><FontAwesomeIcon icon={faGoogle} size="2x" /></Link>
+                        <Link href="/"><FontAwesomeIcon icon={faFacebook} size="2x" /></Link>
                     </div>
                 </div>
             </Layout>
