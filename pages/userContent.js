@@ -21,7 +21,7 @@ export default function Content({ content, auth, jwt, job, id, statusCode }) {
     if (statusCode != 200) {
         console.log('error');
     }
-    if (content === undefined) {
+    if (content[0] === undefined) {
         return (
             <UserLayout>
                 <div id="modal-root">
