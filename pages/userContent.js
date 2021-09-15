@@ -127,7 +127,7 @@ export default function Content({ content, auth, jwt, job, id, statusCode }) {
 
                         {content.map((item) => (
                             <div className={styles.post} key={item.id}>
-                                <Image width={895} height={895} src={`${item.Picture[0].formats.url}`} className={styles.img} onClick={(e) => {
+                                <Image width={895} height={895} src={`${item.Picture[0].url}`} className={styles.img} onClick={(e) => {
                                     setShowModal(true)
                                     setPost(e.target.getAttribute('src').slice(81).replace('&w=1920&q=75', ''))
                                 }} alt="photo" />
