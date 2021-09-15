@@ -21,7 +21,7 @@ export default function discover({ content }) {
 
                     {content.map(item => (
                         <div className={styles.postall} key={item.id}>
-                            <Image width={895} height={895} src={`${item.Picture[0].formats.small.url}`} className={styles.img} alt="photo" />
+                            <Image width={895} height={895} src={`${item.Picture[0].url}`} className={styles.img} alt="photo" />
 
                             <div className={styles.text}>
                                 <i><FontAwesomeIcon icon={faMapMarkerAlt} /></i><span>{item.Location}</span>
