@@ -70,7 +70,7 @@ export default function Content({ content, auth, jwt, job, id, statusCode }) {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json'
             },
-            url: 'https://nextjs-firstapplication.herokuapp.com/upload',
+            url: 'https://res.cloudinary.com/dsjzunvn6/image/upload',
             data: uploadData
         })
 
