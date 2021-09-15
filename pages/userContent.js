@@ -117,7 +117,7 @@ export default function Content({ content, auth, jwt, job, id, statusCode }) {
 
                     </div>
                     <div className={styles.profile}>
-                        <Image width={100} height={100} src={`https://nextjs-firstapplication.herokuapp.com${content[0].user.Avatar[0].url}`} className={styles.avatar} alt="photo" />
+                        <Image width={100} height={100} src={`${content[0].user.Avatar[0].url}`} className={styles.avatar} alt="photo" />
                         <h2>{auth}</h2>
                         <p><FontAwesomeIcon icon={faUserTie} /><span>{job}</span></p>
                         <p><i><FontAwesomeIcon icon={faMapPin} /></i><i>Bucharest, Romania</i></p>
@@ -127,7 +127,7 @@ export default function Content({ content, auth, jwt, job, id, statusCode }) {
 
                         {content.map((item) => (
                             <div className={styles.post} key={item.id}>
-                                <Image width={895} height={895} src={`https://nextjs-firstapplication.herokuapp.com${item.Picture[0].formats.small.url}`} className={styles.img} onClick={(e) => {
+                                <Image width={895} height={895} src={`${item.Picture[0].formats.url}`} className={styles.img} onClick={(e) => {
                                     setShowModal(true)
                                     setPost(e.target.getAttribute('src').slice(81).replace('&w=1920&q=75', ''))
                                 }} alt="photo" />

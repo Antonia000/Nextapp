@@ -7,8 +7,6 @@ import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
 
 export default function discover({ content }) {
 
-    console.log(content);
-
     return (
         <>
             <Head>
