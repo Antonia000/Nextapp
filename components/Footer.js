@@ -23,11 +23,11 @@ export default function Nav() {
             </ul>
 
             <ul>
-                <li><a href="/">Follow us</a></li>
+                <li><Link href="/">Follow us</Link></li>
                 <li>
-                    <a href="/"><FontAwesomeIcon icon={faGoogle} size="2x" /></a>
-                    <a href="/"><FontAwesomeIcon icon={faFacebook} size="2x" /></a>
-                    <a href="/"><FontAwesomeIcon icon={faInstagram} size="2x" /></a>
+                    <Link href="/"><FontAwesomeIcon icon={faGoogle} size="2x" /></Link>
+                    <Link href="/"><FontAwesomeIcon icon={faFacebook} size="2x" /></Link>
+                    <Link href="/"><FontAwesomeIcon icon={faInstagram} size="2x" /></Link>
                 </li>
             </ul>
             <ul></ul>

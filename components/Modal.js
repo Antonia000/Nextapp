@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import ReactDOM from 'react-dom';
 import styles from '../styles/Modal.module.css'
+import Link from 'next/link'
 
 export default function Modal({ show, onClose, children }) {
     const [isBrowser, setIsBrowser] = useState(false);
