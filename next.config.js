@@ -6,7 +6,7 @@ module.exports = {
         API_URL: 'http://localhost:1337/accounts'
     },
     images: {
-        domains: ['res.cloudinary.com'],
+        domains: ['res.cloudinary.com', 'nextjs-firstapplication.herokuapp.com'],
     },
     upload: {
 

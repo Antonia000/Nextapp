@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import ReactDOM from 'react-dom';
 import styles from '../styles/Modal.module.css'
 import Link from 'next/link'
@@ -20,7 +20,7 @@ export default function Modal({ show, onClose, children }) {
         <div className={styles.overlay}>
             <div className={styles.modal}>
                 <div className={styles.header}>
-                    <Link href="#" onClick={handleCloseClick}>
+                    <Link href="#" onClick={handleCloseClick} passHref>
                         X
                     </Link>
                 </div>
