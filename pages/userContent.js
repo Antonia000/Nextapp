@@ -17,7 +17,7 @@ export default function Content({ content, auth, jwt, job, id, statusCode }) {
     const [files, setFiles] = useState('');
     const [post, setPost] = useState('');
 
-    console.log(post);
+
     if (statusCode != 200) {
         console.log('error');
     }
