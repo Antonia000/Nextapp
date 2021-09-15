@@ -130,7 +130,7 @@ export default function Content({ content, auth, jwt, job, id, statusCode }) {
                             <div className={styles.post} key={item.id}>
                                 <Image width={895} height={895} src={`${item.Picture[0].url}`} className={styles.img} onClick={(e) => {
                                     setShowModal(true)
-                                    setPost(e.target.getAttribute('src').slice(17).replace('&w=1920&q=75', ''))
+                                    setPost(e.target.getAttribute('src').slice(95).replace('&w=1920&q=75', ''))
                                 }} alt="photo" />
 
                                 <div className={styles.text}>
@@ -144,7 +144,7 @@ export default function Content({ content, auth, jwt, job, id, statusCode }) {
                         onClose={() => setShowModal(false)}
                         show={showModal}
                     >
-                        <Image width={895} height={895} src={`${post}`} className={styles.img} alt="photo" />
+                        <Image width={895} height={895} src={`https://res.cloudinary.com/dsjzunvn6/image/upload/${post}`} className={styles.img} alt="photo" />
                     </Modal>
                 </div>
             </UserLayout>
