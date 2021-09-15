@@ -26,8 +26,8 @@ export default function Nav() {
                 <li><Link href="/" passHref>Follow us</Link></li>
                 <li>
                     <Link href="/" passHref><a><FontAwesomeIcon icon={faGoogle} size="2x" /></a></Link>
-                    <Link href="/" passHref><FontAwesomeIcon icon={faFacebook} size="2x" /></Link>
-                    <Link href="/" passHref><FontAwesomeIcon icon={faInstagram} size="2x" /></Link>
+                    <Link href="/" passHref><a><FontAwesomeIcon icon={faFacebook} size="2x" /></a></Link>
+                    <Link href="/" passHref><a><FontAwesomeIcon icon={faInstagram} size="2x" /></a></Link>
                 </li>
             </ul>
             <ul></ul>

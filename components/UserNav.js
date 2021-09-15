@@ -2,7 +2,6 @@ import styles from '../styles/Navbar.module.css'
 import Link from 'next/link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUserCog } from '@fortawesome/free-solid-svg-icons'
-import cookies from 'cookies'
 import { destroyCookie } from 'nookies'
 import Router from 'next/router'
 
@@ -22,7 +21,7 @@ export default function UserNav() {
                     <Link href="/discover" passHref>Discover</Link>
                 </li>
                 <li>
-                    <Link href="/userContent" passHref><FontAwesomeIcon icon={faUserCog} /></Link>
+                    <Link href="/userContent" passHref><a><FontAwesomeIcon icon={faUserCog} /></a></Link>
                 </li>
                 <li>
                     <button className={styles.button} onClick={() => Signout()}>Sign Out</button>
