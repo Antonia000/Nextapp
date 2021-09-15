@@ -19,9 +19,9 @@ export default function Modal({ show, onClose, children }) {
         <div className={styles.overlay}>
             <div className={styles.modal}>
                 <div className={styles.header}>
-                    <a href="#" onClick={handleCloseClick}>
+                    <Link href="#" onClick={handleCloseClick}>
                         X
-                    </a>
+                    </Link>
                 </div>
                 <div>{children}</div>
             </div>

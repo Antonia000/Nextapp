@@ -57,7 +57,7 @@ export default function Register() {
                     <h1>Sign Up</h1>
                     <h2>
                         <Link href="/">
-                            <a>Back to home</a>
+                            <Link>Back to home</Link>
                         </Link>
                     </h2>
                     <label htmlFor="first-name">First Name</label>
@@ -73,7 +73,7 @@ export default function Register() {
                     <button type="button" onClick={() => handleRegister()}>Sign up</button>
                     <h2>
                         <Link href="/login">
-                            <a>Already have an account? Login</a>
+                            <Link>Already have an account? Login</Link>
                         </Link>
                     </h2>
                 </form>

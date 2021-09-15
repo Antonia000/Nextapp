@@ -71,7 +71,7 @@ export default function Login() {
                     <h1>Login</h1>
                     <h2>
                         <Link href="/">
-                            <a>Back to home</a>
+                            <Link>Back to home</Link>
                         </Link>
                     </h2>
                     <form>
@@ -85,7 +85,7 @@ export default function Login() {
 
                     <h2>
                         <Link href="/signup">
-                            <a>Don't have an account? Sign Up</a>
+                            <Link>Don't have an account? Sign Up</Link>
                         </Link>
                     </h2>
                     <div>

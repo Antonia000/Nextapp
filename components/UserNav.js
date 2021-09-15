@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUserCog } from '@fortawesome/free-solid-svg-icons'
 import cookies from 'cookies'
-import { parseCookies, destroyCookie } from 'nookies'
+import { destroyCookie } from 'nookies'
 import Router from 'next/router'
 
 export default function UserNav() {
@@ -22,7 +22,7 @@ export default function UserNav() {
                     <Link href="/discover">Discover</Link>
                 </li>
                 <li>
-                    <a href="/userContent"><FontAwesomeIcon icon={faUserCog} /></a>
+                    <Link href="/userContent"><FontAwesomeIcon icon={faUserCog} /></Link>
                 </li>
                 <li>
                     <button className={styles.button} onClick={() => Signout()}>Sign Out</button>
