@@ -18,7 +18,7 @@ export default function Home() {
                     Welcome to the main page
                 </h1>
 
-                <Link href="/login">
+                <Link href="/login" passHref>
                     <button className={styles.button} href="/discover">
                         Discover</button>
                 </Link>
