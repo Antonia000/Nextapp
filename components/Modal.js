@@ -21,7 +21,7 @@ export default function Modal({ show, onClose, children }) {
             <div className={styles.modal}>
                 <div className={styles.header}>
                     <Link href="#" onClick={handleCloseClick} passHref>
-                        X
+                        <a href="#"> X </a>
                     </Link>
                 </div>
                 <div>{children}</div>
