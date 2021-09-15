@@ -19,10 +19,10 @@ export default function UserNav() {
         <nav className={styles.navUser}>
             <ul>
                 <li>
-                    <Link href="/discover">Discover</Link>
+                    <Link href="/discover" passHref>Discover</Link>
                 </li>
                 <li>
-                    <Link href="/userContent"><FontAwesomeIcon icon={faUserCog} /></Link>
+                    <Link href="/userContent" passHref><FontAwesomeIcon icon={faUserCog} /></Link>
                 </li>
                 <li>
                     <button className={styles.button} onClick={() => Signout()}>Sign Out</button>

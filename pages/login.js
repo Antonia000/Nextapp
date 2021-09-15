@@ -70,8 +70,8 @@ export default function Login() {
                 <div className={styles.card}>
                     <h1>Login</h1>
                     <h2>
-                        <Link href="/">
-                            <Link>Back to home</Link>
+                        <Link href="/" passHref>
+                            <Link passHref>Back to home</Link>
                         </Link>
                     </h2>
                     <form>
@@ -84,14 +84,14 @@ export default function Login() {
                     <button type="button" onClick={() => handleLogin()}>Login</button>
 
                     <h2>
-                        <Link href="/signup">
-                            <Link>Don't have an account? Sign Up</Link>
+                        <Link href="/signup" passHref>
+                            <Link passHref>Don't have an account? Sign Up</Link>
                         </Link>
                     </h2>
                     <div>
                         <p>Login with </p>
-                        <Link href="/"><FontAwesomeIcon icon={faGoogle} size="2x" /></Link>
-                        <Link href="/"><FontAwesomeIcon icon={faFacebook} size="2x" /></Link>
+                        <Link href="/" passHref><FontAwesomeIcon icon={faGoogle} size="2x" /></Link>
+                        <Link href="/" passHref><FontAwesomeIcon icon={faFacebook} size="2x" /></Link>
                     </div>
                 </div>
             </Layout>

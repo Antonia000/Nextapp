@@ -7,19 +7,19 @@ export default function Nav() {
         <nav className={styles.nav}>
             <ul>
                 <li key="home">
-                    <Link href="/">
+                    <Link href="/" passHref>
                         <button className={styles.buttonlogin}>
                             Home</button>
                     </Link>
                 </li>
                 <li key="login">
-                    <Link href="/login">
+                    <Link href="/login" passHref>
                         <button className={styles.buttonlogin}>
                             Log In</button>
                     </Link>
                 </li>
                 <li key="signup">
-                    <Link href="/signup">
+                    <Link href="/signup" passHref>
                         <button className={styles.buttonlogin}>
                             Sign Up</button>
                     </Link>

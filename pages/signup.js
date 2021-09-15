@@ -56,8 +56,8 @@ export default function Register() {
                 <form>
                     <h1>Sign Up</h1>
                     <h2>
-                        <Link href="/">
-                            <Link>Back to home</Link>
+                        <Link href="/" passHref>
+                            <Link passHref>Back to home</Link>
                         </Link>
                     </h2>
                     <label htmlFor="first-name">First Name</label>
@@ -72,8 +72,8 @@ export default function Register() {
                     <input id="password" type="password" onChange={e => setPassword(e.target.value)} value={password} placeholder="Password"></input>
                     <button type="button" onClick={() => handleRegister()}>Sign up</button>
                     <h2>
-                        <Link href="/login">
-                            <Link>Already have an account? Login</Link>
+                        <Link href="/login" passHref>
+                            <Link passHref>Already have an account? Login</Link>
                         </Link>
                     </h2>
                 </form>

@@ -9,32 +9,32 @@ export default function Nav() {
         <nav className={styles.nav}>
             <ul key="links">
                 <li>
-                    <Link href="/">All rights reserved</Link>
+                    <Link href="/" passHref>All rights reserved</Link>
                 </li>
                 <li>
-                    <Link href="/">Community</Link>
+                    <Link href="/" passHref>Community</Link>
                 </li>
                 <li>
-                    <Link href="/">Help</Link>
+                    <Link href="/" passHref>Help</Link>
                 </li>
                 <li>
-                    <Link href="/">Privacy</Link>
+                    <Link href="/" passHref>Privacy</Link>
                 </li>
             </ul>
 
             <ul>
-                <li><Link href="/">Follow us</Link></li>
+                <li><Link href="/" passHref>Follow us</Link></li>
                 <li>
-                    <Link href="/"><FontAwesomeIcon icon={faGoogle} size="2x" /></Link>
-                    <Link href="/"><FontAwesomeIcon icon={faFacebook} size="2x" /></Link>
-                    <Link href="/"><FontAwesomeIcon icon={faInstagram} size="2x" /></Link>
+                    <Link href="/" passHref><FontAwesomeIcon icon={faGoogle} size="2x" /></Link>
+                    <Link href="/" passHref><FontAwesomeIcon icon={faFacebook} size="2x" /></Link>
+                    <Link href="/" passHref><FontAwesomeIcon icon={faInstagram} size="2x" /></Link>
                 </li>
             </ul>
             <ul></ul>
             <ul></ul>
             <ul>
                 <li>
-                    <Link href="/">Contact us</Link>
+                    <Link href="/" passHref>Contact us</Link>
                 </li>
                 <li>
                     <input type="text" placeholder="email"></input>
