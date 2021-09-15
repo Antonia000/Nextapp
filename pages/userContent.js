@@ -17,11 +17,11 @@ export default function Content({ content, auth, jwt, job, id, statusCode }) {
     const [files, setFiles] = useState('');
     const [post, setPost] = useState('');
 
-
+    console.log(content);
     if (statusCode != 200) {
         console.log('error');
     }
-    if (content[0] === undefined || content[0] === null) {
+    if (content === undefined) {
         return (
             <UserLayout>
                 <div id="modal-root">
