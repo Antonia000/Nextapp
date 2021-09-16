@@ -17,7 +17,7 @@ export default function Content({ content, auth, jwt, job, id, statusCode }) {
     const [files, setFiles] = useState('');
     const [post, setPost] = useState('');
 
-    console.log(content);
+    //console.log(content[0].user.Avatar[0]);
     if (statusCode != 200) {
         console.log('error');
     }
@@ -42,6 +42,9 @@ export default function Content({ content, auth, jwt, job, id, statusCode }) {
                 </div>
             </UserLayout>
         );
+    }
+    if (content[0].user.Avatar[0] === undefined) {
+        content[0].user.Avatar[0] = { "url": "https://res.cloudinary.com/dsjzunvn6/image/upload/v1631776841/profile_zehk7x.png" }
     }
     async function handleUpload() {
 

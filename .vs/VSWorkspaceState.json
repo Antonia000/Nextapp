@@ -1,6 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\components",
+    "\\pages",
+    "\\styles"
   ],
+  "SelectedNode": "\\pages\\userContent.js",
   "PreviewInSolutionExplorer": false
 }
