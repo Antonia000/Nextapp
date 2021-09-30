@@ -61,15 +61,15 @@ export default function Register() {
                         </Link>
                     </h2>
                     <label htmlFor="first-name">First Name</label>
-                    <input id="first-name" onChange={e => setfirstName(e.target.value)} value={firstName} placeholder="First Name"></input>
+                    <input id="first-name" onChange={e => setfirstName(e.target.value)} value={firstName} ></input>
                     <label htmlFor="last-name">Last Name</label>
-                    <input id="last-name" onChange={e => setlastName(e.target.value)} value={lastName} placeholder="Last Name"></input>
+                    <input id="last-name" onChange={e => setlastName(e.target.value)} value={lastName}></input>
                     <label htmlFor="email">Email</label>
-                    <input id="email" onChange={e => setEmail(e.target.value)} value={email} placeholder="Email"></input>
+                    <input id="email" onChange={e => setEmail(e.target.value)} value={email} ></input>
                     <label htmlFor="username">Username</label>
-                    <input id="username" onChange={e => setUsername(e.target.value)} value={username} placeholder="Username"></input>
+                    <input id="username" onChange={e => setUsername(e.target.value)} value={username} ></input>
                     <label htmlFor="password">Password</label>
-                    <input id="password" type="password" onChange={e => setPassword(e.target.value)} value={password} placeholder="Password"></input>
+                    <input id="password" type="password" onChange={e => setPassword(e.target.value)} value={password} ></input>
                     <button type="button" onClick={() => handleRegister()}>Sign up</button>
                     <h2>
                         <Link href="/login" passHref>

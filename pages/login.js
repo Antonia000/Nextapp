@@ -64,11 +64,11 @@ export default function Login() {
     return (
         <>
             <Head>
-                <title>Login</title>
+                <title>Log In</title>
             </Head>
             <Layout>
                 <div className={styles.card}>
-                    <h1>Login</h1>
+                    <h1>Log In</h1>
                     <h2>
                         <Link href="/" passHref>
                             <Link passHref>Back to home</Link>

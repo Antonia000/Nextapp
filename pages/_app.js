@@ -4,12 +4,24 @@ import { config } from "@fortawesome/fontawesome-svg-core";
 config.autoAddCss = false; // Tell Font Awesome to skip adding the CSS automatically 
 import Router from 'next/router'
 import { parseCookies } from 'nookies'
-
+import { useState } from 'react';
+import Loader from '../components/Loader'
 
 function MyApp({ Component, pageProps }) {
+    const [loading, setLoading] = useState('');
+    Router.events.on("routeChangeStart", (url) => {
+        console.log("Route is changing...")
+        setLoading(true);
 
+    })
+    Router.events.on("routeChangeComplete", (url) => {
+        console.log("Route is changed.")
+        setLoading(false);
+
+    })
     return (
         <>
+            {loading && <Loader />}
             <Component {...pageProps} />
         </>
     )
